@@ -9,14 +9,14 @@ import java.util.List;
 
 @Service
 public class UserDaoService {
-    private static List<User> users = new ArrayList<>();
+    private static final List<User> users = new ArrayList<>();
 
     private static int usersCount = 3;
 
     static {
         users.add(new User(1, "Kenneth", new Date(), "pass1", "770101-1111111"));
-        users.add(new User(2, "Alice", new Date(), "pass2", "770201-1111111"));
-        users.add(new User(3, "Elena", new Date(), "pass3", "770401-1111111"));
+        users.add(new User(2, "Alice", new Date(), "pass2", "780201-1111111"));
+        users.add(new User(3, "Elena", new Date(), "pass3", "790401-1111111"));
     }
 
     public List<User> findAll() {
