@@ -58,7 +58,7 @@ public class UserController {
         User savedUser = service.save(user);
 
         URI location = ServletUriComponentsBuilder.fromCurrentRequest() // 사용자 요청 URI
-                .path("/{id}") // buildAndExpand를 통해 얻은 값이 들어옴
+                .path("/{id}") // buildAndExpand 를 통해 얻은 값이 들어옴
                 .buildAndExpand(savedUser.getId())  // {id}에 넣어줄 값
                 .toUri();   // URI 생성
 
